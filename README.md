@@ -39,7 +39,7 @@ cd alzheimers-mri-classifier
 ```bash
 pip install -r requirements.txt
 ```
-2. **setup kaggle API credentials **
+3. **setup kaggle API credentials**
 ```bash
 mkdir -p ~/.kaggle
 cp kaggle.json ~/.kaggle/
