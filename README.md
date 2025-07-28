@@ -34,3 +34,32 @@ The dataset contains MRI images categorized into four classes:
 ```bash
 git clone https://github.com/Lemlime5336/alzheimers-mri-classifier.git
 cd alzheimers-mri-classifier
+```
+2. **install dependencies**
+```bash
+pip install -r requirements.txt
+```
+2. **setup kaggle API credentials **
+```bash
+mkdir -p ~/.kaggle
+cp kaggle.json ~/.kaggle/
+chmod 600 ~/.kaggle/kaggle.json
+```
+## How It Works
+The model is a Convolutional Neural Network (CNN) designed for multi-class image classification:
+Input preprocessing: Images are resized and augmented using ImageDataGenerator to improve generalization.
+CNN architecture: Multiple convolutional layers extract spatial features, followed by max-pooling to reduce dimensionality.
+Dense layers: Fully connected layers perform final classification into the 4 Alzheimer’s stages.
+Loss function: Categorical Crossentropy.
+Optimizer: Adam with learning rate scheduling and early stopping to prevent overfitting.
+Evaluation: Accuracy, confusion matrix, and classification report are used to assess performance.
+
+## Results
+Model trained for 17 epochs (with early stopping from 90 planned)
+Achieved 88.8% accuracy on the test set
+Classification report:
+Mild Demented: F1 = 0.88
+Moderate Demented: F1 = 0.99
+Non Demented: F1 = 0.88
+Very Mild Demented: F1 = 0.83
+Confusion matrix and performance visualizations are available in the notebook
