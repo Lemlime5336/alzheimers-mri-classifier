@@ -17,7 +17,7 @@ This project uses TensorFlow/Keras to train a model on a publicly available Kagg
 ---
 
 ## Dataset
-This project uses the [Alzheimer's MRI Dataset (4 Classes)](https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images).  
+This project uses the [Alzheimer's MRI Dataset (4 Classes)](https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset).  
 The dataset contains MRI images categorized into four classes:  
 - **MildDemented**  
 - **ModerateDemented**  
